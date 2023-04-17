@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1>Dosis recomendada sería:</h1>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styleSIR.css"
+    <title>SIR</title>
+</head>
+
+
+<body>
+    <script>
+        function saltarlinea() {
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function imprimir(frase) {
+            document.write(frase);
+            saltarlinea();
+        }
+
+
+        var pesoPaciente = parseInt(prompt("Ingresa el peso del paciente en Kg"));
+
+        var dosisLidocaina = "Lidocaína 1-1,5 mg/kg"
+    
+
+        imprimir("PREMEDICACIÓN") 
+
+
+
+
+
+
+
+        imprimir("Lidocaina (1-1,5 mg/kg) :" + " La dosis recomendada sería de " + (1 * pesoPaciente) + "mg" + " - " +(1.5 * pesoPaciente) + "mg")
+        imprimir("Fentanilo (2-3 ug/kg) :" + " La dosis recomendada sería de " + (2 * pesoPaciente) + " ug" + " - " +(3 * pesoPaciente) + "ug")
+        imprimir("Atropina (0,02 mg/kg) :" + " La dosis recomendada sería de " + (0.02 * pesoPaciente) + " mg según el peso, pero debes recordar que la dosis debe ser de 0,1 a 0,5 mg")
+        imprimir("Rocuronio (0,06 mg/kg) :" + " La dosis recomendada para el peso sería de " + (0.06 * pesoPaciente) + " mg pero debes recordar que la dosis debe ser el 10% de la dosis que se usará como parálisis")
+
+ 
+
+
+        imprimir("INDUCCIÓN")
+
+
+
+        imprimir("Midazolam (0,1-0,3 mg/kg) :" + " La dosis recomendada sería de " + (0.1 * pesoPaciente) + "- "+ " - " +(0.3 * pesoPaciente) + "mg, se recomienda bajar un 40% la dosis en adulto mayor, sería " + ((0.1 * pesoPaciente)*60/100) + " - " +((0.3 * pesoPaciente)*60/100) + "mg")
+        imprimir("Etomidato (0,3 mg/kg) :" + " La dosis recomendada sería de " + (0.3 * pesoPaciente) + " mg") 
+        imprimir("Propofol (1-1,5 mg/kg) :" + " La dosis recomendada sería de " + (1 * pesoPaciente) + "mg" + " - " +(1.5 * pesoPaciente) + " mg, se recomienda bajar un 40% la dosis en adulto mayor, sería " + ((1 * pesoPaciente)*60/100) + " - " +((1.5 * pesoPaciente)*60/100) + "mg")
+
+        
+
+
+
+
+
+        imprimir("BNM- PARÁLISIS")
+
+
+
+        imprimir("Succinilcolina (1-1,5 mg/kg) :" + " La dosis recomendada sería de " + (1 * pesoPaciente) + "mg" + " - " +(1.5 * pesoPaciente) + "mg")
+        imprimir("Rocuronio (0,6-1,2 mg/kg) :" + " La dosis recomendada sería de " + (0.6 * pesoPaciente) + "mg" + " - " +(1.2 * pesoPaciente) + "mg")
+        imprimir("Atracurio (0,4 mg/kg) :" + " La dosis recomendada sería de " + (0.4 * pesoPaciente) + " mg")
+            
+
+        
+
+    </script>
+</body>
+</html>
